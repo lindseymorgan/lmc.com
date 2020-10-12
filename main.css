@@ -49,7 +49,7 @@ h1 {
 main {
     margin: 3rem;
     background-color: var(--darkgrey);
-    border-radius: 2%;
+    border-radius: 1.2%;
     box-shadow: var(--shadow) 5px 5px 5px;
     display: inline-block;
 }
@@ -69,7 +69,43 @@ header p {
     align-items: center;
     height: 100%;
     width: 100%;
+    margin-top: 0.5rem;
+}
+
+.gallery-text {
+    font-weight: 500;
     margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.art-for-sale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.websites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.other-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .image {
