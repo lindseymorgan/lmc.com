@@ -28,22 +28,28 @@ body {background-image: linear-gradient(to bottom right, var(--gradientdark), va
 background-repeat: no-repeat;
 }
 
-/* .container {
-    background-color: white;
-    margin: 4rem;
-
-} */
 
 header {
     display: inline-block;
+    margin: 3rem 0rem 2rem 0rem;
 }
 
-h1 {
+header h1 {
     display: inline-block;
     font-weight: 500;
     font-size: 3rem;
     text-align: left !important;
     margin: 0;
+    padding: 2rem 5rem 0rem 0rem;
+}
+
+
+header p {
+    display: inline-block;
+    font-size: 1.4rem;
+    text-align: right !important;
+    margin: 0;
+    padding: 2rem 0rem 0rem 3rem;
 }
 
 main {
@@ -52,13 +58,6 @@ main {
     border-radius: 1.2%;
     box-shadow: var(--shadow) 5px 5px 5px;
     display: inline-block;
-}
-
-header p {
-    display: inline-block;
-    font-size: 1.4rem;
-    margin: 4rem 2rem 0rem 4rem;
-    text-align: right !important;
 }
 
 .gallery {
@@ -122,4 +121,13 @@ header p {
 .image img{
     width: 100%;
     /* height: 90%; */
+}
+
+.fab {
+    font-size: 2rem;
+    margin: 1rem 1rem 0rem 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
 }
