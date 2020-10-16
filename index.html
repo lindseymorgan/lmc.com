@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css">
 </head>
 <body>
     
@@ -23,21 +23,38 @@
 
             <div class="gallery">
 
-                <h2 class="gallery-text">Art For Sale</h2>
+                <h2 class="gallery-text">Hand Drawn Art For Sale</h2>
                 <div class="art-for-sale">
 
                     <div class="image">
-                        <img src="triaconsquare.jpeg" alt="pen drawing">
+                        <a href="alternating.jpeg" title="6 x 8.25 inches">
+                            <img src="alternating.jpeg" alt="pen drawing">
+                        </a>
                     </div>
 
                     <div class="image">
-                        <img src="halftriacon.png" alt="pen drawing">
+                        <a href="basic.jpeg" title="11 x 14 inches">
+                            <img src="basic.jpeg" alt="pen drawing">
+                        </a>
                     </div>
 
                     <div class="image">
-                        <img src="grid.png" alt="pen drawing">
+                        <a href="half.jpeg" title="6 x 8.25 inches">
+                            <img src="half.jpeg" alt="pen drawing">
+                        </a>
                     </div>
 
+                    <div class="image">
+                        <a href="center.jpeg" title="11 x 14 inches">
+                            <img src="center.jpeg" alt="pen drawing">
+                        </a>
+                    </div>
+
+                    <div class="image">
+                        <a href="pencil.jpeg" title="11 x 14 inches">
+                            <img src="pencil.jpeg" alt="pencil drawing">
+                        </a>
+                    </div>
 
 
                 </div> <!-- end of art-for-sale -->
@@ -46,17 +63,23 @@
                 <div class="websites">
 
                     <div class="image">
-                        <img src="nancybos.png" alt="">
+                        <a href="nancybos.png" title="nancybos.me">
+                            <img src="nancybos.png" alt="">
+                        </a>
                         <a target="blank" href="https://nancybos.me">nancybos.me</a>
                     </div>
 
                     <div class="image">
-                        <img src="stc.png" alt="">
+                        <a href="stc.png" title="singingthroughchange.com">
+                            <img src="stc.png" alt="">
+                        </a>
                         <a target="blank" href="https://singingthroughchange.com">singingthroughchange.com</a>
                     </div>
 
                     <div class="image">
-                        <img src="studiobos.png" alt="">
+                        <a href="studiobos.png" title="studiobos.com">
+                            <img src="studiobos.png" alt="">
+                        </a>
                         <a target="blank" href="https://studiobos.com">studiobos.com</a>
                     </div>
 
@@ -66,34 +89,23 @@
                 <div class="other-work">
 
                     <div class="image">
-                        <img src="studiobosad.png" alt="">
+                        <a href="facebookad.png" title="Facebook Ad">
+                            <img src="facebookad.png" alt="">
+                        </a>
                     </div>
 
                     <div class="image">
-                        <img src="facebookad.png" alt="">
-                    </div>
-
-<!--                     <div class="image">
-                        <img src="sunset.jpeg" alt="">
-                    </div>
--->
-                    <div class="image">
-                        <img src="charcoalfaces.jpg" alt="">
-                    <p>charcoal on paper</p>
+                        <a href="charcoalfaces.jpg" title="charcoal drawing">
+                            <img src="charcoalfaces.jpg" alt="">
+                        </a>
                     </div>
 
                     <div class="image">
-                        <img src="bug.jpeg" alt="">
+                        <a href="abetat.jpg" title="stick and poke tattoo">
+                            <img src="abetat.jpg" alt="">
+                        </a>
                     </div>
 
-                    <div class="image">
-                        <img src="abetat.jpg" alt="">
-                    <p>stick and poke tattoo</p>
-                    </div>
-
-                    <div class="image">
-                        <img src="sprout.jpeg" alt="">
-                    </div>
 
                 </div> <!-- end of other-work -->
 
@@ -108,6 +120,13 @@
         </footer>
 
     </div><!-- end of container -->
+
+    <script>
+        window.addEventListener('load', function() {
+        baguetteBox.run('.gallery');
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.js"></script>
 
 </body>
 </html>
