@@ -19,6 +19,10 @@
     text-decoration: none;
 }
 
+.caption {
+    overflow: hidden;
+}
+
 a:hover {
     color: var(--lightpink);
 }
@@ -30,7 +34,7 @@ background-repeat: no-repeat;
 
 header {
     display: inline-block;
-    margin: 2.5rem 0rem 2rem 0rem;
+    margin: 1rem 0rem;
 }
 
 header h1 {
@@ -40,7 +44,7 @@ header h1 {
     text-align: left !important;
     margin: 0;
     padding: 2rem 5rem 0rem 0rem;
-    text-shadow: 3px 3px 3px #460d1d;
+    text-shadow: 3px 3px 3px #440c1c;
 }
 
 
@@ -77,7 +81,7 @@ main {
     font-size: 1.9rem;
     margin-top: 3rem;
     margin-bottom: 0.5rem;
-    text-shadow: 3px 3px 3px #69084c;
+    text-shadow: 3px 3px 3px #580a41;
 }
 
 .art-for-sale {
@@ -131,4 +135,188 @@ main {
 footer p {
     font-size: 1.2rem;
     text-shadow: 3px 3px 3px #5a1126;
+}
+
+
+
+@media(max-width: 1011px){
+    
+    .image {
+        width: 40%;
+    }
+
+    header h1 {
+        padding-right: 2rem;
+    }
+
+    header p {
+        padding-left: 1rem;
+    }
+}
+
+
+@media(max-width: 858px){
+    header {
+        display: block;
+    }
+    header h1 {
+        text-align: center !important;
+        display: block;
+        padding: 1rem;
+    }
+
+    header p {
+        text-align: center !important;
+        display: block;
+        padding: 0;
+    }
+
+    main {
+        margin: 2rem;
+    }
+
+    .fab {
+        font-size: 1.6rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media(max-width: 560px){
+
+    .image {
+        margin: 0.5rem;
+    }
+}
+
+
+
+@media(max-width: 543px){
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.3rem;
+    }
+
+    .gallery-text {
+        font-size: 1.6rem;
+    }
+}
+
+
+@media(max-width: 460px){
+
+    header h1 {
+        font-size: 2.21rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .gallery-text {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+@media(max-width: 413px){
+
+    header h1 {
+        font-size: 2.1rem;
+    }
+}
+
+
+@media(max-width: 399px){
+
+    header h1 {
+        font-size: 2.1rem;
+        padding: 1rem 0.2rem;
+    }
+
+    .image {
+        width: 35%;
+    }
+
+    .fab {
+        font-size: 1.4rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media(max-width: 369px){
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    main {
+        margin: 1rem;
+    }
+
+    .gallery-text {
+        font-size: 1.3rem;
+    }
+
+    .first-gallery-text {
+        margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .image {
+        margin: 0.3rem;
+    }
+}
+
+
+@media(max-width: 319px){
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .gallery-text {
+        font-size: 1.2rem;
+    }
+
+    .first-gallery-text {
+        margin: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    main {
+        margin: 0.6rem;
+    }
+
+    .image {
+        width: 39%;
+    }
+
+    .fab {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        margin: 0.3rem;
+    }
 }
