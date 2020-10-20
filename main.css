@@ -21,6 +21,7 @@
 
 .caption {
     overflow: hidden;
+    display: block;
 }
 
 a:hover {
