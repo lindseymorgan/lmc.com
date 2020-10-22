@@ -213,6 +213,10 @@ footer p {
     .gallery-text {
         font-size: 1.6rem;
     }
+    
+    .first-gallery-text {
+        margin-top: 1.7rem;
+    }
 }
 
 
