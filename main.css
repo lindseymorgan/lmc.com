@@ -1,3 +1,9 @@
+/* 
+Date uploaded: 1/21/2021
+Author: Lindsey Costlow
+Author URL: lindseymorgancostlow.com */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 :root {
@@ -5,12 +11,13 @@
     --darkgrey: #333;
     --lightgrey: #cccccc;
     --raspberry: #8f2744;
-    --lightpink: #f3c2d0;
+    --lightpink: #f0b6c6;
+    --lightestpink: #f8c6d5;
     --gradientlight: #962987;
     --gradientmed: #99022d;
     --gradientdark: #520f58;
     --shadow: #252525;
-    --offwhite: #f8e5eb;
+    --offwhite: #faecf1;
 }
 
 * {font-family: 'Jost', Helvetica;
@@ -19,14 +26,19 @@
     text-decoration: none;
 }
 
-.caption {
-    overflow: hidden;
-    display: block;
-}
 
 a:hover {
     color: var(--lightpink);
 }
+
+.pink-link {
+    color: var(--lightestpink);
+}
+
+a {
+    overflow: hidden;
+}
+
 
 body {background-image: linear-gradient(to bottom right, var(--gradientdark), var(--gradientmed), var(--gradientlight));
 background-repeat: no-repeat;
@@ -66,69 +78,95 @@ main {
     display: inline-block;
 }
 
+
 .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: 46% 52%;
+    grid-gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: flex-start;
 }
 
-.gallery-text {
+.design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-header {
     font-weight: 500;
     font-size: 1.9rem;
-    margin-top: 3rem;
-    margin-bottom: 0.5rem;
+    text-shadow: 3px 3px 3px #580a41;
+    margin: 0.2rem;
+}
+
+.design-card {
+    width: 80%;
+    margin: 0.5rem;
+    padding: 0.9rem;
+    background-color: var(--shadow);
+    border-radius: 2%;
+    
+}
+
+.design-card img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.3rem;
+}
+
+.design-card p {
+    padding: 0 2rem 0.6rem 2rem;
+}
+
+.art-header {
+    font-weight: 500;
+    font-size: 1.9rem;
+    text-shadow: 3px 3px 3px #580a41;
+    margin: 0.5rem 0;
+}
+
+.art-card {
+    width: 87%;
+    margin: 0.5rem;
+    padding: 0.9rem;
+    background-color: var(--shadow);
+    border-radius: 2%;
+}
+
+.art-card img{
+    width: 100%;
+}
+
+.art-card p {
+    margin: 0.3rem;
+}
+
+.art-gallery {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.about-header {
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin-bottom: 0rem;
     text-shadow: 3px 3px 3px #580a41;
 }
 
-.art-for-sale {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.websites {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.other-work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.site-text {
-    margin: 0.5rem 0rem 0rem 0rem;
-}
-
-.image {
-    width: 28%;
-    margin: 1rem;
-    background-color: var(--shadow);
-    border-radius: 2%;
-    padding: 0.5rem;
-}
-
-.image img{
-    width: 100%;
+.about p {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 0rem 8rem 2rem 8rem;
+    text-shadow: 2px 2px 2px #5a1126;
 }
 
 .fab {
@@ -145,10 +183,6 @@ footer p {
 
 
 @media(max-width: 1011px){
-    
-    .image {
-        width: 40%;
-    }
 
     header h1 {
         padding-right: 2rem;
@@ -187,14 +221,35 @@ footer p {
     footer p {
         font-size: 1rem;
     }
+
+    .art-card, .design-card {
+        padding: 0.6rem;
+    }
+
+    .design-card p {
+        padding: 0;
+    }
 }
 
 
 
-@media(max-width: 560px){
+@media(max-width: 610px){
 
-    .image {
-        margin: 0.5rem;
+    .site-text {
+        padding: 0 !important;
+    }
+
+    .about p {
+        padding: 0 2rem;
+    }
+
+    .art-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sold-card {
+        display: none;
     }
 }
 
@@ -213,7 +268,7 @@ footer p {
     .gallery-text {
         font-size: 1.6rem;
     }
-    
+
     .first-gallery-text {
         margin-top: 1.7rem;
     }
@@ -233,6 +288,22 @@ footer p {
     .gallery-text {
         font-size: 1.4rem;
     }
+
+    main {
+        margin: 1rem;
+    }
+
+    .gallery {
+        grid-gap: 1rem;
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+    .design-header {
+        margin: 0.9rem 0;
+    }
+
+
 }
 
 
@@ -242,6 +313,13 @@ footer p {
     header h1 {
         font-size: 2.1rem;
     }
+
+    main {
+        margin: 0.5rem;
+    }
+
+
+
 }
 
 
@@ -250,10 +328,6 @@ footer p {
     header h1 {
         font-size: 2.1rem;
         padding: 1rem 0.2rem;
-    }
-
-    .image {
-        width: 35%;
     }
 
     .fab {
@@ -288,9 +362,6 @@ footer p {
         margin: 1.5rem 0.5rem 0.5rem 0.5rem;
     }
 
-    .image {
-        margin: 0.3rem;
-    }
 }
 
 
@@ -314,10 +385,6 @@ footer p {
 
     main {
         margin: 0.6rem;
-    }
-
-    .image {
-        width: 39%;
     }
 
     .fab {
