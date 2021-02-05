@@ -124,6 +124,10 @@ main {
     padding: 0 2rem 0.6rem 2rem;
 }
 
+.linkedin-links {
+    margin: 0rem !important;
+}
+
 .art-header {
     font-weight: 500;
     font-size: 1.9rem;
