@@ -12,6 +12,7 @@ Author URL: lindseymorgancostlow.com */
     box-sizing: border-box;
     font-family: Jost;
     font-weight: 200 !important;
+    max-width: 100%;
 }
 
 .background {
@@ -20,8 +21,6 @@ Author URL: lindseymorgancostlow.com */
 
 main {
     color: white;
-    height: 100vh;
-    width: 100vw;
     
 }
 
@@ -42,7 +41,7 @@ main {
 }
 
 .headings h2 {
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 1.5rem 0;
 }
 
 .social-links {
@@ -52,11 +51,6 @@ main {
 
 .social-link {
     padding: 0 1.2rem 0 0;
-}
-
-.arrow {
-    font-size: 2.2rem;
-    padding: 4rem 0 0 0;
 }
 
 
@@ -73,8 +67,7 @@ a:hover {
 
 .card-p {
     font-size: 1.8rem;
-    margin: 0 !important;
-    padding: 0 !important;
+    
 }
 
 
@@ -116,11 +109,12 @@ a:hover {
 
 .RLtext {
     align-self: center;
+    width: 100%;
 }
 
 .RLimg img {
     width: 100%;
-    
+    border-radius: 1%;
 }
 
 .RL-links {
@@ -148,6 +142,7 @@ a:hover {
 
 .NBimg img {
     width: 100%;
+    border-radius: 1%;
 }
 
 
@@ -165,4 +160,113 @@ footer {
 
 .social-link-f {
     padding: 1rem;
+}
+
+
+@media(max-width:801px){
+    
+    .card-p {
+        font-size: 1.3rem;
+    }
+    
+    .plenti {
+        padding: 1rem 2rem 8rem 2rem;
+    }
+
+    .RL {
+        padding: 1rem 2rem 8rem 2rem;
+    }
+
+    .RLtext p {
+        max-width: 92%;
+    }
+
+    .NB {
+        padding: 1rem 2rem 8rem 2rem;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .headings {
+        padding: 0rem 0rem 0rem 4rem;
+    }
+
+    .plentiimg, .RLimg {
+        align-self: center;
+    } 
+
+    .card-title {
+        font-size: 1.7rem;
+    }
+
+    .RL-links {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 415px) {
+    
+    .headings {
+        padding: 0 0 0 2.5rem;
+    }
+    
+    .plenti {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem 2rem 6rem 2rem;
+    }
+
+    .plentitext {
+        text-align: center;
+    }
+
+    .plentiimg {
+        width: 40%;
+        text-align: center;
+        
+    }
+
+    .RL {
+        padding: 1rem 2rem 6rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RLimg {
+        width: 60%;
+    }
+
+    .RLtext {
+        text-align: center;
+    }
+
+    .RLtext p {
+        max-width: 100%;
+    }
+
+    .NB {
+        padding: 1rem 2rem 4rem 2rem;
+    }
+
+    .NBimg {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .NBimg img {
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .social-links-footer {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width:370px) {
+    .headings {
+        padding: 0 0 0 1.2rem;
+    }
 }
