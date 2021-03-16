@@ -14,8 +14,11 @@ Author URL: lindseymorgancostlow.com */
     font-weight: 200 !important;
 }
 
-main {
+.background {
     background-color: black;
+}
+
+main {
     color: white;
     height: 100vh;
     width: 100vw;
