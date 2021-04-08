@@ -32,6 +32,18 @@ main {
 }
 
 
+img {
+    filter: grayscale(70%);
+    transition: 0.3s;
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
+
+
+
 .headings {
     padding: 0rem 0rem 0rem 6rem;
 }
@@ -57,6 +69,7 @@ main {
 a {
     text-decoration: none !important;
     color: rgb(223, 223, 223) !important;
+    transition: 0.3s;
 }
 
 a:hover {
@@ -165,6 +178,16 @@ a:hover {
 .NBimg img {
     width: 100%;
     border-radius: 1%;
+}
+
+
+.about {
+    padding: 1rem 12rem 5rem 12rem;
+    text-align: center;
+}
+
+.about-p {
+    font-size: 1.6rem;
 }
 
 
