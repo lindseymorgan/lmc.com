@@ -237,6 +237,14 @@ footer {
     .NB {
         padding: 1rem 2rem 8rem 2rem;
     }
+
+    .about {
+        padding: 1rem 5rem 5rem 5rem;
+    }
+
+    .about-p {
+        font-size: 1.2rem;
+    }
 }
 
 @media(max-width: 600px) {
@@ -323,6 +331,10 @@ footer {
 
     .social-links-footer {
         font-size: 1.6rem;
+    }
+
+    .about {
+        padding: 1rem 2rem 3rem 2rem;
     }
 }
 
