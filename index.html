@@ -28,41 +28,185 @@
         <div class="design">
 
             <div class="art-app">
-                <h2 class="card-title">Untitled Art App</h2>
+
+                <h2 class="card-title">ArtHaus</h2>
                 <p class="card-p">Young artists need a new, fulfilling way to share their art with their community. I'm designing an app that aims to solve that.</p>
                 <div class="art-app-links">
-                    <a href="https://lindsey-morgan.medium.com/untitled-art-app-4bcafedf7a47" target="blank" class="art-app-link">Read More</a>
+                    <!-- <a href="https://lindsey-morgan.medium.com/untitled-art-app-4bcafedf7a47" target="blank" class="art-app-link">Read More</a> --> <button class="collapse-button" data-toggle="collapse" data-target="#art-app-collapse">Read More</button>
                 </div><!-- end of art-app-links -->
+
+                <div class="collapse" id="art-app-collapse">
+                    <hr class="collapse-hr">
+                    <p class="collapse-p">I am currently in the process of designing a social app for artists. </p>
+                    <p class="collapse-p"><span style="font-weight: 400 !important;">The Problem:</span> Many young artists are not satisfied with current social media options for sharing their art. These same young people are exceedingly lonely, as <a href="https://mcc.gse.harvard.edu/reports/loneliness-in-america">this October 2020 Harvard study</a> found that 61% of participants 18-25 experienced loneliness <span style="font-weight: 400 !important;">"almost all of the time or all of the time."</span></p>
+                    <p class="collapse-p"><span style="font-weight: 400 !important;">The Process:</span> Since there are inumerable social apps, I had a distinct framework to work off of. I used Instagram, VSCO, Reddit, and Twitter's apps to research these standards. </p>
+                    <p class="collapse-p"><span style="font-weight: 400 !important;">The Goal:</span> I want to create a location based platform for artists to post their work and engage with others in their city. My thinking here is that relationships built on this platform will have the capability of becoming face to face, given proper modern safety precautions, which gives the relationships real potential, as well as a greater sense of viability and tangibility.  </p>
+                    <p class="collapse-p"><span style="font-weight: 400 !important;">The Design:</span> I am currently in the fourth iteration of the design. Here's how my wireframes and mockups have evolved.</p>
+
+                        <!-- lightbox -->
+                        <div class="row">
+                            <div class="column">
+                                <img src="arthaus0.0.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                                <img src="arthaus1.0.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                                <img src="arthaus2.0.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                                <img src="arthaus3.0.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                            </div>
+                            <div class="column">
+                                <img src="arthaus4.0.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                            </div>
+                        </div>
+
+                        <!-- The Modal/Lightbox -->
+                        <div id="myModal" class="modal">
+                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 5</div>
+                                <img src="arthaus0.0.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 5</div>
+                                <img src="arthaus1.0.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 5</div>
+                                <img src="arthaus2.0.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 5</div>
+                                <img src="arthaus3.0.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 5</div>
+                                <img src="arthaus4.0.png" style="width:100%">
+                            </div>
+
+                            <!-- Next/previous controls -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <!-- Caption text -->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            </div><!-- end of modal-content -->
+                        </div><!-- end of modal -->
+
+
+                    <p class="collapse-p"></p>
+                    <hr class="collapse-hr">
+                    <button class="collapse-button" data-toggle="collapse" data-target="#art-app-collapse">Close</button>
+                </div><!--end of #art-app-collapse -->
+
             </div><!-- end of art-app -->
 
+
             <div class="RBC">
+
                 <h2 class="card-title">Retirement Budget Calculator</h2>
-                <p class="card-p">Currently under construction, I redesigned the landing page of Retirement Budget Calculator to make it feel modern and approachable, especially to the retiree population.</p>
+                <p class="card-p">I recently redesigned the landing page of Retirement Budget Calculator to make it feel modern and approachable, especially to the retiree population.</p>
                 <div class="rbc-links">
-                    <a href="https://retirementbudgetcalculator.com" target="blank" class="rbc-link">Site</a> &nbsp; &nbsp; <a href="https://lindsey-morgan.medium.com/project-in-progress-retirement-budget-calculator-cbc53c8904c1" target="blank" class="rbc-link">Read More</a>
+                    <button class="collapse-button" data-toggle="collapse" data-target="#RBC-Collapse">Read More</button> &nbsp; &nbsp; <a href="https://retirementbudgetcalculator.com" target="blank" class="rbc-link">Site</a>
                 </div><!-- end of rbc-links -->
+
+                <div class="collapse" id="RBC-Collapse">
+                    <hr class="collapse-hr">
+                    
+                    <p class="collapse-p">Recently the CTO of Retirement Budget Calculator, a mentor of mine, reached out to me about redesigning the home page of the site, which was originally built by a developer. Here's how it looked when I started...</p>
+                    <img src="oldRBC.png" alt="" class="RBCimg RBCimg1">
+                    <p class="collapse-p">The priorities were to 1. modernize the site, namely with a new headings font. 2. to humanize the site with age appropriate, joyful stock photos. 3. to design with comfortable white space. I also wanted to polish up the color scheme, and we ran a 99Designs contest for a new logo simultaneously.  </p>
+                    <p class="collapse-p">Here's my final mockup...</p>
+                    <div class="RBC-grid">
+                        <img src="RBC3.0.png" alt="" class="RBCimg RBCimg2">
+                        <div class="RBC-grid-right">
+                            <p class="RBCp1 collapse-p">As my ideas for the site evolved, I noticed that I was continuously going for a fun vibe, that would still come off as trustworthy. I'm really happy with how the hero image ties into this. </p>
+                            <br><br class="RBCbr"><br class="RBCbr"><br class="RBCbr">
+                            <p class="RBCp2 collapse-p">With a tool as crucial as a retirement planner, I knew it was important to establish credibilty. On the original site design the testimonials were laid out uninterestingly, and were entirely ignorable. To make them pop I gave them their own distinct section with plenty of padding, as well as individual focus through a timed slideshow. Presenting a comfortable amount of information makes it much more readable. </p>
+                            <br><br class="RBCbr"><br class="RBCbr"><br class="RBCbr">
+                            <p class="RBCp3 collapse-p">Another important way I established trustworthiness was highlighting the "As Seen & Heard On" section</p>
+                        </div><!-- end of RBC-grid-right -->
+                        <p class="collapse-p">Check out the rebuilt site <a href="https://retirementbudgetcalculator.com" target="blank">here!</a></p>
+                    </div><!-- end of RBC-grid -->
+
+                    <hr class="collapse-hr">
+                    <button class="collapse-button" data-toggle="collapse" data-target="#RBC-Collapse">Close</button>
+                </div><!-- end of #RBC-Collapse -->
+
             </div><!-- end of RBC -->
 
 
             <div class="plenti">
-                <div class="plentitext">
-                    <h2 class="card-title">Plenti</h2>
-                    <p class="card-p">I'm currently collaborating with two developers to redesign the app Plenti. Plenti is a neighborhood crop sharing platform for promoting community and home grown food.</p>
-                </div><!-- end of plentitext -->
-                <div class="plentiimg"><a href="https://plenti.dev" target="blank" class="plenti-link"><img src="plenti.png" alt=""></a></div><!-- end of plentiimg -->
+
+                <div class="plenti-grid">
+                    <div class="plentitext">
+                        <h2 class="card-title">Plenti</h2>
+                        <p class="card-p">I'm currently collaborating with two developers to redesign the app Plenti. Plenti is a neighborhood crop sharing platform for promoting community and self-sustainability.</p>
+                        <button class="collapse-button" data-toggle="collapse" data-target="#plenti-collapse">Read More</button>
+                    </div><!-- end of plentitext -->
+                    
+                    <div class="plentiimg"><a href="https://plenti.dev" target="blank" class="plenti-link"><img src="plenti.png" alt=""></a></div><!-- end of plentiimg -->
+                </div><!-- end of plenti-grid -->
+
+                <div class="collapse" id="plenti-collapse">
+                    <hr class="collapse-hr">
+
+                    <p class="collapse-p">As a side project, two developers and I are reworking the app Plenti. It's currently available for download on Apple and Android, and we're hoping to release 2.0 in late may.  </p>
+                    <p class="collapse-p">Since there're only three of us working on this project, I find myself wearing more hats than usual. The app is built off material design, so I don't have too much freedom in terms of elements, but I'm spending almost as much time on fleshing out features and streamlining user flows.</p>
+                    <div class="plenti-collapse-grid">
+                        <img src="og plenti.png" alt="" class="plenti-collapse-grid-img">
+                        <p class="collapse-p">Originally the only way to find food you were looking for was a search function that would make you scroll through cards of all possible fruit or vegetable options, click on the one you were looking for, and hope somebody would have some listed. <br><br>When a user would list their produce, they would select whether they had "a little", "some" "a lot", or "many". I found those categorizations a little confusing, so we've removed "many", but kept the system since it must apply to each type of produce.  </p>
+                        <p class="collapse-p">Now the main crop finding feature is a feed of everything posted near you, sorted chronologically, with a slider to set max distance in the settings. <br><br> This new feature also includes users being able to upload photos of their produce, which definitely brings a new level of personal connection to the app. <br><br>These user uploaded pictures will also show up on the profile page of premium users, where they can curate a gallery of what they've grown, and food they've made. </p>
+                        <img src="new plenti.png" alt="" class="plenti-collapse-grid-img">
+                    </div><!-- end of plenti-collapse-grid -->
+                    <hr class="collapse-hr">
+                    <button class="collapse-button" data-toggle="collapse" data-target="#plenti-collapse">Close</button>
+                </div><!-- end of #plenti-collapse -->
+            
             </div><!-- end of plenti -->
 
 
             <div class="RL">
-                <div class="RLimg">
-                    <a href="https://reimagining-linkedin.netlify.app/" target="blank"><img src="RL LinkedIn.png" alt=""></a>
-                </div>
-                <div class="RLtext">
-                    <h2 class="card-title">Reimagining LinkedIn</h2>
-                    <p class="card-p">LinkedIn needs a makeover. I created a new version prioritizing usability and a simple, modern aesthetic. </p>
-                    <div class="RL-links"> <a href="https://lindsey-morgan.medium.com/reimagining-linkedin-72cc3584557d" target="blank">Read More</a> &nbsp; &nbsp;<a href="https://reimagining-linkedin.netlify.app/" target="blank">Site</a> &nbsp; &nbsp; <a href="https://github.com/lindseymorgan" target="blank">Code</a></div>
-                </div>
+
+                <div class="RLgrid">
+                    <div class="RLimg">
+                        <a href="https://reimagining-linkedin.netlify.app/" target="blank"><img src="RL LinkedIn.png" alt=""></a>
+                    </div>
+                    <div class="RLtext">
+                        <h2 class="card-title">Reimagining LinkedIn</h2>
+                        <p class="card-p">LinkedIn needs a makeover. I created a new version prioritizing usability and a simple, modern aesthetic. </p>
+                        <div class="RL-links"> <button class="collapse-button" data-toggle="collapse" data-target="#RL-Collapse">Read More</button> &nbsp; &nbsp;<a href="https://reimagining-linkedin.netlify.app/" target="blank">Site</a> &nbsp; &nbsp; <a href="https://github.com/lindseymorgan" target="blank">Code</a></div> 
+                    </div>
+                </div><!-- end of RLgrid -->
+
+                <div class="collapse" id="RL-Collapse">
+                    <hr class="collapse-hr">
+                    <p class="collapse-p">If you’re anything like me, you’re probably tired of LinkedIn. The whole site has an outdated vibe, and the home page is overwhelmingly cluttered. I think its high time LinkedIn got a new look. Maybe something like this…</p>
+                    <img class="RLGif" src="RLGif.gif" alt="">
+                    <p class="collapse-p">As any designer understands, too much information on a page is bound to drive away users. That is what LinkedIn did to me at first. Until it became too important to not use.</p>
+                    <p class="collapse-p">As <a href="https://medium.com/@tunikova_k/are-we-consuming-too-much-information-b68f62500089">Oksana Tunikova</a> put it, <span style="font-weight: 400 !important;">“There is only a certain amount of information a human brain can process at one time.”</span></p>
+                    <p class="collapse-p">That idea formed the basis for my unsolicited redesign of the home page. I took the most important aspects and pared it all down, using HTML & CSS, into a digestible yet still robust platform.</p>
+                    <p class="collapse-p"><a href="https://www.investopedia.com/ask/answers/120214/how-does-linkedin-lnkd-make-money.asp">Investopedia took LinkedIn’s public revenue information,</a> and determined that <span style="font-weight: 400 !important;">“65% of third-quarter revenue, totaling $960 million, came from recruitment services.”</span> This means that LinkedIn’s job network is arguably the most important aspect of the site. Recruitment services is followed by ads on the site, which makes up 18% of revenue, and the remaining 17% is from premium memberships.</p>
+                    <p class="collapse-p">With these statistics, I had a much better idea of what to prioritize in my redesign. I kept the promoted jobs, posts, and sidebar ads with a similar ratio of content to ads as the current LinkedIn. Additionally I added a Jobs section to the left column, which is prime, eye-catching real estate that is currently wasted on following hashtags.</p>
+                    <p class="collapse-p">Now that you’ve also spent some time thinking about how LinkedIn could be better, go back to it — <a href="https://www.linkedin.com/feed/">https://www.linkedin.com/feed/</a></p>
+                    <p class="collapse-p" style="font-weight: 400 !important;">How does it make you feel?</p>
+                    <hr class="collapse-hr">
+                    <button class="collapse-button" data-toggle="collapse" data-target="#RL-Collapse">Close</button>
+                </div><!-- end of #RL-Collapse -->
+
             </div><!-- end of RL -->
+
 
 
             <div class="NB">
@@ -80,7 +224,7 @@
                     <h2>Hey. I'm Lindsey.</h2>
                     <p class="about-p">I am a passionate, young creative. I deeply value learning and honest evaluation. I am illuminated by collaboration and ambition. I'm currently searching for an entry level user experience design position, where I can contribute my love for designing for the user. </p>
                     <p class="about-p"></p>
-                    <p class="about-p">My favorite things include sunlight, drawing (check my instagram), chocolate, animals, and making new friends.</p>
+                    <p class="about-p">My favorite things include sunlight, drawing (check my instagram), and making new friends.</p>
                 </div><!-- end of about-text -->
             </div><!-- end of about -->
 
@@ -94,7 +238,51 @@
 
 
     </main>
+
     
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+            showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+           showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
