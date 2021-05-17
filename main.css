@@ -1,5 +1,5 @@
 /* 
-Date uploaded: 4/27/2021
+Date uploaded: 5/17/2021
 Author: Lindsey Costlow
 Author URL: lindseymorgancostlow.com */
 
@@ -192,7 +192,7 @@ img.hover-shadow {
     padding: 4rem 6rem 0rem 6rem;
 }
 
-.RBC-grid {
+.RBC-collapse-grid {
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -305,6 +305,17 @@ a:hover {
 .rbc-links {
     font-size: 1.5rem;
 }
+
+.rbc-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 2rem;
+}
+
+.rbc-img {
+    align-self: center;
+}
+
 
 .plenti {
     padding: 1rem 9rem 15rem 9rem;
@@ -541,7 +552,22 @@ footer {
         padding: 1rem 1.5rem 6rem 1.5rem;
     }
 
-    .RBC-grid {
+    .rbc-grid {
+        display: block;
+    }
+
+    .rbc-img {
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding-bottom: 1.5rem;
+    }
+
+    .rbc-text {
+        text-align: center;
+    }
+
+    .RBC-collapse-grid {
         display: block;
     }
 
